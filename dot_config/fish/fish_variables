@@ -1,0 +1,35 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export AWS_SESSION_TOKEN:IQoJb3JpZ2luX2VjEGUaCXVzLWVhc3QtMSJHMEUCIQDX/xbgVkJ4dez/11n3cx0nxFjyuR09vfwkkGjcFf0a2QIgP7XAXtLeRYlbbS/NkE00PLcsCCFrN1s3P4yFUGrA\x2bfoq\x2bAIIzv//////////ARABGgw2MTQ1Mzg4MzMwNjYiDDhpECysFlcdlWKQhSrMAramGdrNImooBQTpH0\x2b1KY5Q49vlNcxAvahKyBZ6mL7ePiCwzmW6rlDjHXElcwOI0F2P2NDWRM3i3XFzBnfZEsX6ch8flSikGASrz/KLIAI2kdlrHpZaAKNfBGWXKi1JiXVXx5D1i3vAK5vdtLTCL0Bo/OeO9A0Fy4YqxCYh/EHBoZA8JSlybv8q4hwhiWAKII3Mu5o38RAaza08qRlp/KTy5A4RRMUFO\x2bI/0wViyMJ3RJogKGkYTwe2zoDlnrLGcI0gSiLQFqX8Q5Ng/pYsDqB2QvzR4H6LDB4LF2nNE3A1QQV6iBILRvgNTYOjoG/hAknqhv8CTwQ3WT9J2nJ0/DpvfgdzNmvg5MvxlLP/t8m6JENz4xWGhRcvwMC6zPgkcSyRfhN2eZ3JrQvpwR4Zl91sTomIWlmohCr\x2bHAJLCJ/FasSTyBRMEDgjeqZmMM2ZuJ4GOqcBK1tANmsxIjr0B3W2tQ6DuB2GVtVK09hsWO0u45hxrrnay0HLDxu810x5sg6osqz9SFwm1w3Bt3FGSvgZzrj/RzydeJY1iwfzfKaeGgHaNBhAf\x2b82u/U5nr\x2b0luLcpd5SEwf9xbkz7B3kb7voZCICTokjEgx7BBBLMH/6Rt2/BWSpH3xIe0E0Ww7pcuM0E1CQlhr5B/Kc\x2bxmwun2KCTqVPe2pOSmAPa4\x3d
+SETUVAR --export PYENV_ROOT:/Users/cartertran/\x2epyenv
+SETUVAR __fish_initialized:3400
+SETUVAR _fisher_upgraded_to_4_4:\x1d
+SETUVAR fish_color_autosuggestion:555\x1ebrblack
+SETUVAR fish_color_cancel:\x2dr
+SETUVAR fish_color_command:005fd7
+SETUVAR fish_color_comment:990000
+SETUVAR fish_color_cwd:green
+SETUVAR fish_color_cwd_root:red
+SETUVAR fish_color_end:009900
+SETUVAR fish_color_error:ff0000
+SETUVAR fish_color_escape:00a6b2
+SETUVAR fish_color_history_current:\x2d\x2dbold
+SETUVAR fish_color_host:normal
+SETUVAR fish_color_host_remote:yellow
+SETUVAR fish_color_normal:normal
+SETUVAR fish_color_operator:00a6b2
+SETUVAR fish_color_param:00afff
+SETUVAR fish_color_quote:999900
+SETUVAR fish_color_redirection:00afff
+SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_status:red
+SETUVAR fish_color_user:brgreen
+SETUVAR fish_color_valid_path:\x2d\x2dunderline
+SETUVAR fish_key_bindings:fish_default_key_bindings
+SETUVAR fish_pager_color_completion:\x1d
+SETUVAR fish_pager_color_description:B3A06D\x1eyellow
+SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
+SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR fish_user_paths:/Users/cartertran/\x2elocal/bin\x1e/Users/cartertran/\x2ecargo/bin\x1e/opt/homebrew/sbin\x1e/Users/cartertran/\x2epyenv/bin\x1e/Users/cartertran/\x2espicetify\x1e/Users/cartertran/go\x1e/usr/local/bin\x1e/opt/homebrew/bin
