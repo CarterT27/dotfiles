@@ -45,4 +45,11 @@ require("lazy").setup({
 	},
     "wakatime/vim-wakatime",
     "christoomey/vim-tmux-navigator",
+    {
+        'numToStr/Comment.nvim',
+        opts = {
+            -- add any options here
+        },
+        lazy = false,
+    },
 })
