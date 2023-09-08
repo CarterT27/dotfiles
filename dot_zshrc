@@ -130,7 +130,9 @@ export EDITOR="nvim"
 
 export PATH="/Library/Frameworks/Python.framework/Versions/3.11/bin:$PATH"
 
-eval "$(pyenv init -)"
+if [ "$(uname)" = "Darwin" ]; then
+    eval "$(pyenv init -)"
+fi
 
 (cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors-tty.sh
