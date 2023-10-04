@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export TERM=xterm-256color
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -133,6 +134,12 @@ export PATH="/Library/Frameworks/Python.framework/Versions/3.11/bin:$PATH"
 if [ "$(uname)" = "Darwin" ]; then
     eval "$(pyenv init -)"
     yabai --start-service
+fi
+if [ "$(uname)" = "Linux" ]; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+    wal -i Pictures/eclipse.jpg
 fi
 
 (cat ~/.cache/wal/sequences &)
