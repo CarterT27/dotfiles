@@ -58,8 +58,8 @@ require("lazy").setup({
         event = {
             -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
             -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/**.md"
-            "BufReadPre ~/Library/Mobile\\ Documents/iCloud\\~md\\~obsidian/Documents/Carter\\ Tran/**.md",
-            "BufNewFile ~/Library/Mobile\\ Documents/iCloud\\~md\\~obsidian/Documents/Carter\\ Tran/**.md",
+            "BufReadPre /Library/Mobile\\ Documents/iCloud\\~md\\~obsidian/Documents/Carter\\ Tran/**.md",
+            "BufNewFile /Library/Mobile\\ Documents/iCloud\\~md\\~obsidian/Documents/Carter\\ Tran/**.md",
         },
         dependencies = {
             -- Required.
@@ -68,7 +68,7 @@ require("lazy").setup({
             -- see below for full list of optional dependencies 👇
         },
         opts = {
-            dir = "~/Library/Mobile\\ Documents/iCloud\\~md\\~obsidian/Documents/Carter\\ Tran",  -- no need to call 'vim.fn.expand' here
+            dir = "/Library/Mobile\\ Documents/iCloud\\~md\\~obsidian/Documents/Carter\\ Tran",  -- no need to call 'vim.fn.expand' here
 
             -- see below for full list of options 👇
         },
