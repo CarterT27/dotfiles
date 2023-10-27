@@ -68,9 +68,14 @@ require("lazy").setup({
             -- see below for full list of optional dependencies 👇
         },
         opts = {
-            dir = "/Library/Mobile\\ Documents/iCloud\\~md\\~obsidian/Documents/Carter\\ Tran",  -- no need to call 'vim.fn.expand' here
-
-            -- see below for full list of options 👇
+            daily_notes = {
+                folder = "Daily Notes",
+                date_format = "%Y%m%d",
+                template = "Daily Note",
+            },
+            templates = {
+                subdir = "Templates",
+            },
         },
     },
     { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' }
