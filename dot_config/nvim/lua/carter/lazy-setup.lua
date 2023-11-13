@@ -79,5 +79,5 @@ require("lazy").setup({
         },
     },
     { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' },
-    { "lervag/vimtex", lazy = false },
+    -- { "lervag/vimtex", lazy = false },
 })
