@@ -134,6 +134,7 @@ export PATH="/Library/Frameworks/Python.framework/Versions/3.11/bin:$PATH"
 if [ "$(uname)" = "Darwin" ]; then
     eval "$(pyenv init -)"
     yabai --start-service
+    export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 fi
 if [ "$(uname)" = "Linux" ]; then
     export PYENV_ROOT="$HOME/.pyenv"

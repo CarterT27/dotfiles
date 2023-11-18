@@ -1,0 +1,22 @@
+{
+  "baseFontSize": 16,
+  "translucency": true,
+  "cssTheme": "",
+  "enabledCssSnippets": [
+    "bullet-point-relationship-lines",
+    "enlarge-image-on-hover",
+    "smaller-scrollbar",
+    "stylish-blockquotes",
+    "subtler-folding-gutter-arrows",
+    "tag-pills",
+    "autofading-ui",
+    "better-bullet-points-in-edit-mode",
+    "bigger-link-popup-preview",
+    "collapsing-sidebar",
+    "image-cards"
+  ],
+  "interfaceFontFamily": "",
+  "textFontFamily": "",
+  "monospaceFontFamily": "FiraCode Nerd Font",
+  "accentColor": ""
+}

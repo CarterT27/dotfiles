@@ -1,0 +1,226 @@
+{
+  "main": {
+    "id": "3eb192c4c06eafc5",
+    "type": "split",
+    "children": [
+      {
+        "id": "d7a11480ee8c9e87",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dd7b4727b5726069",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Literature Notes/Math 31AH Lecture 20.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1a14e267bf741e0f",
+    "type": "split",
+    "children": [
+      {
+        "id": "52a4dc1b6a16445a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "045843ee56db58b8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0d597c3139ceda44",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "math_31ah",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "aa3ab5ea34c47db4",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "72f73e5e4f495302",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "aa748716b3bd108d",
+    "type": "split",
+    "children": [
+      {
+        "id": "4e726db0a95bd45d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0045be0b1cdbd6fc",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "6d16cd767bf9c386",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Literature Notes/Math 31AH Lecture 20.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c16feaa9f301b215",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "86e49ce17fc3b640",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Literature Notes/Math 31AH Lecture 20.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "02e749f87344ebee",
+            "type": "leaf",
+            "state": {
+              "type": "podcast_player_view",
+              "state": {}
+            }
+          },
+          {
+            "id": "3602935a74ac7163",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "32c30371740e8545",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          },
+          {
+            "id": "9a70aca571c329e1",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Literature Notes/Math 31AH Lecture 20.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 7
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "janitor:Janitor: scan vault": false,
+      "dbfolder:Create a new database table": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "045843ee56db58b8",
+  "lastOpenFiles": [
+    "Literature Notes/Math 31AH Lecture 19.md",
+    "Literature Notes/Math 31AH Lecture 20.md",
+    "Literature Notes/Data Science Personal Project.md",
+    "Literature Notes/Math 31AH Lecture 18.md",
+    "Literature Notes/Math 31AH Lecture 16.md",
+    "Literature Notes/Math 31AH Lecture 14.md",
+    "Literature Notes/Math 31AH Lecture 15.md",
+    "Literature Notes/Math 31AH Lecture 17.md",
+    "Unsorted Notes/Untitled.md",
+    "Unsorted Notes/Untitled 1.md",
+    "Literature Notes/Math 31AH Discussion 5.md",
+    "Literature Notes/Math 31AH Lecture 2.md",
+    "Permanent Notes/LaTeX for Mathematics and STEM Notes.md",
+    "Literature Notes/Math 31AH Lecture 13.md",
+    "Literature Notes/Math 31AH Chapter 1 Textbook Notes.md",
+    "Fleeting Notes/Testing Out LaTeX.md",
+    "Daily Notes/2023-10-27.md",
+    "Permanent Notes/Internships and Networking Resources.md",
+    "Permanent Notes/Grind75 Notes.md",
+    "Literature Notes/TQT Feature Engineering.md",
+    "Templates/Note Template.md",
+    "Permanent Notes/Academic Subject Essay Topic.md",
+    "Literature Notes/Quantitative Research Methods.md",
+    "Literature Notes/DSA and Kaggle Resources.md",
+    "Permanent Notes/MIT Course 6-14.md",
+    "Literature Notes/The Almanack Of Naval Ravikant - Eric Jorgenson.md",
+    "Literature Notes/visual_notes.pdf"
+  ]
+}
