@@ -130,6 +130,7 @@ alias vim=nvim
 export EDITOR="nvim"
 
 export PATH="/Library/Frameworks/Python.framework/Versions/3.11/bin:$PATH"
+export PATH="/Users/cartertran/.local/lib/python3.11/site-packages:$PATH"
 
 if [ "$(uname)" = "Darwin" ]; then
     eval "$(pyenv init -)"
@@ -142,5 +143,5 @@ if [ "$(uname)" = "Linux" ]; then
     eval "$(pyenv init -)"
 fi
 
-(cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
+# (cat ~/.cache/wal/sequences &)
+# source ~/.cache/wal/colors-tty.sh
