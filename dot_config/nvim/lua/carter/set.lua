@@ -31,3 +31,5 @@ vim.opt.updatetime = 50
 vim.g.mapleader = " "
 
 vim.cmd('set background=dark')
+
+vim.opt.colorclumn=79
