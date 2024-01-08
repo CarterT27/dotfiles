@@ -32,4 +32,4 @@ vim.g.mapleader = " "
 
 vim.cmd('set background=dark')
 
-vim.opt.colorclumn=79
+vim.opt.colorcolumn=79
