@@ -90,4 +90,8 @@ require("lazy").setup({
     {
         'lervag/vimtex'
     },
+    {
+        'SirVer/ultisnips',
+        'honza/vim-snippets'
+    }
 })

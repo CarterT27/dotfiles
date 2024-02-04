@@ -5,8 +5,10 @@
 
 -- This enables Neovim's syntax-related features. Without this, some VimTeX features will not work.
 -- vim.api.nvim_command('syntax enable')
--- vim.g.tex_flavor = 'latex'
+vim.g.tex_flavor = 'xelatex'
 -- vim.g.vimtex_view_method = 'zathura'
 -- vim.g.vimtex_quickfix_mode = 0
 -- vim.api.nvim_command('set conceallevel=1')
 -- g:tex_conceal='abdmg'
+-- vim.g.vimtex_compiler_method = 'latexmk -xelatex'
+-- nmap <localleader>c <Plug>(vimtex-compile)
