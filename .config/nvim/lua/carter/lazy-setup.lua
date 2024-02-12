@@ -55,31 +55,20 @@ require("lazy").setup({
     {
         "epwalsh/obsidian.nvim",
         lazy = true,
-        event = {
-            -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
-            -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/**.md"
-            "BufReadPre " .. vim.fn.expand "~" .. "/Library/Mobile\\ Documents/iCloud\\~md\\~obsidian/Documents/Carter\\ Tran/**.md",
-            "BufNewFile " .. vim.fn.expand "~" .. "/Library/Mobile\\ Documents/iCloud\\~md\\~obsidian/Documents/Carter\\ Tran/**.md",
-        },
+        version = "*",
+        ft = "markdown",
         dependencies = {
-            -- Required.
+            -- Required
             "nvim-lua/plenary.nvim",
+            -- Optional
+            "hrsh7th/nvim-cmp",
+            "nvim-telescope/telescope.nvim",
+            "nvim-treesitter",
 
             -- see below for full list of optional dependencies 👇
         },
-        opts = {
-            daily_notes = {
-                folder = "Daily Notes",
-                date_format = "%Y%m%d",
-                template = "Daily Note",
-            },
-            templates = {
-                subdir = "Templates",
-            },
-        },
     },
     { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' },
-    -- { "lervag/vimtex", lazy = false },
     {
         "kdheepak/lazygit.nvim",
         -- optional for floating window border decoration
@@ -88,7 +77,8 @@ require("lazy").setup({
         },
     },
     {
-        'lervag/vimtex'
+        'lervag/vimtex',
+        lazy = false,
     },
     {
         'SirVer/ultisnips',
