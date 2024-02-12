@@ -1,5 +1,5 @@
 # dotfiles
-My dotfiles, managed with chezmoi
+My dotfiles
 
 # Features
 - Improves MacOS UI/UX
