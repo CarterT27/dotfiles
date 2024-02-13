@@ -7,8 +7,8 @@ require("obsidian").setup({
     },
     daily_notes = {
         -- folder = "Daily Notes",
-        date_format = "%Y%m%d",
-        template = "Daily Note Template",
+        date_format = "%Y-%m-%d",
+        template = "Daily Note.md",
     },
     templates = {
         subdir = "templates",
