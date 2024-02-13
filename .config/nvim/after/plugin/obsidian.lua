@@ -10,6 +10,11 @@ require("obsidian").setup({
         date_format = "%Y-%m-%d",
         template = "Daily Note.md",
     },
+    note_id_func = function(title)
+        -- Disable Zettelkasten title format
+        return title
+    end,
+    disable_frontmatter = true,
     templates = {
         subdir = "templates",
     },
