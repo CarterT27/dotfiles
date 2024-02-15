@@ -19,3 +19,8 @@ require("obsidian").setup({
         subdir = "templates",
     },
 })
+
+vim.keymap.set("n", "<C-n>d", vim.cmd.ObsidianToday)
+vim.keymap.set("n", "<C-n>f", vim.cmd.ObsidianQuickSwitch)
+vim.keymap.set("n", "<C-n>o", vim.cmd.ObsidianOpen)
+vim.keymap.set("n", "<C-n>t", vim.cmd.ObsidianTemplate)
