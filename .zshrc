@@ -145,3 +145,5 @@ fi
 
 # (cat ~/.cache/wal/sequences &)
 # source ~/.cache/wal/colors-tty.sh
+#
+eval "$(zoxide init --cmd cd zsh)"

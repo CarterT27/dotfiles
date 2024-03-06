@@ -83,5 +83,18 @@ require("lazy").setup({
     {
         'SirVer/ultisnips',
         'honza/vim-snippets'
+    },
+    {
+        "ellisonleao/carbon-now.nvim",
+        lazy = true,
+        cmd = "CarbonNow",
+        ---@param opts cn.ConfigSchema
+        opts = {
+            options = {
+                font_family = "Fira Code",
+                theme = "dracula-pro",
+                titlebar = ""
+            }
+        }
     }
 })
