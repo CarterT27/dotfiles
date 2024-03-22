@@ -147,3 +147,5 @@ fi
 # source ~/.cache/wal/colors-tty.sh
 #
 eval "$(zoxide init --cmd cd zsh)"
+
+alias please='sudo $(history -p !!)'
