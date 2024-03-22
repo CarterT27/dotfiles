@@ -149,4 +149,3 @@ fi
 eval "$(zoxide init --cmd cd zsh)"
 
 alias please='sudo $(history -p !!)'
-eval "$(gh copilot alias -- zsh)"
