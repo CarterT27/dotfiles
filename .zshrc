@@ -61,7 +61,7 @@ path=(~/bin $path)
 # Export environment variables.
 export GPG_TTY=$TTY
 export EDITOR="nvim"
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home
 
 # Source additional local files if they exist.
 z4h source ~/.env.zsh
