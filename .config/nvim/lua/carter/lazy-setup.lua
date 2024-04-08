@@ -96,5 +96,7 @@ require("lazy").setup({
                 titlebar = ""
             }
         }
-    }
+    },
+    -- "Exafunction/codeium.vim",
+    "github/copilot.vim"
 })
