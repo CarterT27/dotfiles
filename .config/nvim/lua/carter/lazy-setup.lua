@@ -98,5 +98,5 @@ require("lazy").setup({
         }
     },
     -- "Exafunction/codeium.vim",
-    "github/copilot.vim"
+    -- "github/copilot.vim"
 })
