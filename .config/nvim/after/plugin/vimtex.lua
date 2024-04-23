@@ -8,7 +8,7 @@
 vim.g.tex_flavor = 'xelatex'
 -- vim.g.vimtex_view_method = 'zathura'
 -- vim.g.vimtex_quickfix_mode = 0
--- vim.api.nvim_command('set conceallevel=1')
+vim.api.nvim_command('set conceallevel=0')
 -- g:tex_conceal='abdmg'
 -- vim.g.vimtex_compiler_method = 'latexmk -xelatex'
 -- nmap <localleader>c <Plug>(vimtex-compile)
