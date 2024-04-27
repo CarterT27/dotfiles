@@ -97,6 +97,8 @@ alias tree='tree -a -I .git'
 alias vim=nvim
 eval "$(thefuck --alias)"
 alias please='sudo $(history -p !!)'
+alias be='bundle exec jekyll serve'
+alias jp='jupyter notebook'
 
 # Add flags to existing aliases.
 alias ls="${aliases[ls]:-ls} -A"
