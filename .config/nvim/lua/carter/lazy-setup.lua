@@ -102,7 +102,13 @@ require("lazy").setup({
         lazy = false, -- or ft = 'typst'
         version = '0.3.*',
         build = function() require 'typst-preview'.update() end,
-    }
+    },
+    -- {
+    --   "supermaven-inc/supermaven-nvim",
+    --   config = function()
+    --     require("supermaven-nvim").setup({})
+    --   end,
+    -- },
     -- "Exafunction/codeium.vim",
     -- "github/copilot.vim"
 })
