@@ -8,7 +8,7 @@ require("obsidian").setup({
     daily_notes = {
         folder = "daily notes",
         date_format = "%Y-%m-%d",
-        template = "templates/Daily Note.md",
+        template = "Daily Note.md",
     },
     note_id_func = function(title)
         -- Disable Zettelkasten title format
