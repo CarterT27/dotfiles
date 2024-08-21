@@ -193,3 +193,20 @@ alt-shift-h = ['join-with left', 'mode main']
 alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
+
+# Setup workspaces on startup
+
+[[on-window-detected]]
+if.app-id = 'com.googlecode.iterm2'
+if.during-aerospace-startup = true
+run = ['move-node-to-workspace 1']
+
+[[on-window-detected]]
+if.app-id = 'org.mozilla.firefox'
+if.during-aerospace-startup = true
+run = ['move-node-to-workspace 2']
+
+[[on-window-detected]]
+if.app-id = 'com.TickTick.task.mac'
+if.during-aerospace-startup = true
+run = ['move-node-to-workspace 3']
