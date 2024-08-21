@@ -103,12 +103,29 @@ require("lazy").setup({
         version = '0.3.*',
         build = function() require 'typst-preview'.update() end,
     },
+    {
+        "kawre/leetcode.nvim",
+        build = ":TSUpdate html",
+        dependencies = {
+            "nvim-telescope/telescope.nvim",
+            "nvim-lua/plenary.nvim", -- required by telescope
+            "MunifTanjim/nui.nvim",
+
+            -- optional
+            "nvim-treesitter/nvim-treesitter",
+            "rcarriga/nvim-notify",
+            "nvim-tree/nvim-web-devicons",
+        },
+        opts = {
+            -- configuration goes here
+        },
+    }
     -- {
-    --   "supermaven-inc/supermaven-nvim",
-    --   config = function()
-    --     require("supermaven-nvim").setup({})
-    --   end,
-    -- },
-    -- "Exafunction/codeium.vim",
-    -- "github/copilot.vim"
-})
+        --   "supermaven-inc/supermaven-nvim",
+        --   config = function()
+            --     require("supermaven-nvim").setup({})
+            --   end,
+            -- },
+            -- "Exafunction/codeium.vim",
+            -- "github/copilot.vim"
+        })
