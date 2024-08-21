@@ -109,7 +109,6 @@ setopt glob_dots     # no special treatment for file names with a leading dot
 setopt no_auto_menu  # require an extra TAB press to open the completion menu
 
 # Idk where to put these
-eval "$(pyenv init -)"
 eval "$(zoxide init --cmd cd zsh)"
 source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
 source /opt/homebrew/opt/chruby/share/chruby/auto.sh
