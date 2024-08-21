@@ -100,6 +100,7 @@ alias please='sudo $(history -p !!)'
 alias be='bundle exec jekyll serve'
 alias jp='jupyter notebook'
 alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox'
+alias docker='podman'
 
 # Add flags to existing aliases.
 alias ls="${aliases[ls]:-ls} -A"
