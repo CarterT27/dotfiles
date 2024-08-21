@@ -103,7 +103,10 @@ require("lazy").setup({
         version = '0.3.*',
         build = function() require 'typst-preview'.update() end,
     },
-    'Vigemus/iron.nvim',
+    {
+        'Vigemus/iron.nvim',
+        lazy = false
+    },
     -- {
     --   "supermaven-inc/supermaven-nvim",
     --   config = function()
