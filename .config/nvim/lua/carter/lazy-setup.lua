@@ -80,10 +80,10 @@ require("lazy").setup({
         'lervag/vimtex',
         lazy = false,
     },
-    {
-        'SirVer/ultisnips',
-        'honza/vim-snippets'
-    },
+    -- {
+    --     'SirVer/ultisnips',
+    --     'honza/vim-snippets'
+    -- },
     {
         "ellisonleao/carbon-now.nvim",
         lazy = true,
