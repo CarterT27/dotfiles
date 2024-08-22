@@ -112,6 +112,7 @@ setopt no_auto_menu  # require an extra TAB press to open the completion menu
 
 # Idk where to put these
 eval "$(zoxide init --cmd cd zsh)"
+eval "$(mise activate zsh)"
 source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
 source /opt/homebrew/opt/chruby/share/chruby/auto.sh
 chruby ruby-3.1.3
