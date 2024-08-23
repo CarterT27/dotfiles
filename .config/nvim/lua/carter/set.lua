@@ -31,3 +31,5 @@ vim.g.mapleader = " "
 vim.cmd('set background=dark')
 
 vim.loader.enable()
+
+vim.g.python3_host_prog=vim.fn.expand("~/.virtualenvs/neovim/bin/python3")

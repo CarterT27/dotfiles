@@ -68,7 +68,11 @@ require("lazy").setup({
             -- see below for full list of optional dependencies 👇
         },
     },
-    { 'morsecodist/magma-nvim', run = ':UpdateRemotePlugins' },
+    {
+        'morsecodist/magma-nvim',
+        run = ':UpdateRemotePlugins',
+        lazy = false
+    },
     {
         "kdheepak/lazygit.nvim",
         -- optional for floating window border decoration
