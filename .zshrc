@@ -102,6 +102,7 @@ alias jp='jupyter notebook'
 alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox'
 alias docker='podman'
 alias leet='vim leetcode.nvim'
+alias s='kitten ssh'
 
 # Add flags to existing aliases.
 alias ls="${aliases[ls]:-ls} -A"
