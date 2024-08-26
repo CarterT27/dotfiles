@@ -210,3 +210,9 @@ run = ['move-node-to-workspace 2']
 if.app-id = 'com.TickTick.task.mac'
 if.during-aerospace-startup = true
 run = ['move-node-to-workspace 3']
+
+# Ignore apps
+
+[[on-window-detected]]
+if.app-id = 'com.macpaw.CleanMyMac4'
+run = ['layout floating']
