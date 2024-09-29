@@ -197,12 +197,12 @@ alt-shift-l = ['join-with right', 'mode main']
 # Setup workspaces on startup
 
 [[on-window-detected]]
-if.app-id = 'com.googlecode.iterm2'
+if.app-id = 'company.thebrowser.Browser'
 if.during-aerospace-startup = true
 run = ['move-node-to-workspace 1']
 
 [[on-window-detected]]
-if.app-id = 'org.mozilla.firefox'
+if.app-id = 'com.kovidgoyal.kitty'
 if.during-aerospace-startup = true
 run = ['move-node-to-workspace 2']
 
@@ -214,5 +214,9 @@ run = ['move-node-to-workspace 3']
 # Ignore apps
 
 [[on-window-detected]]
-if.app-id = 'com.macpaw.CleanMyMac4'
+if.app-id = 'com.macpaw.CleanMyMac5'
 run = ['layout floating']
+
+# [[on-window-detected]]
+# if.app-id = 'company.thebrowser.Browser'
+# run = ['layout floating']
