@@ -210,6 +210,11 @@ if.during-aerospace-startup = true
 run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
+if.app-id = 'com.googlecode.iterm2'
+if.during-aerospace-startup = true
+run = ['move-node-to-workspace 2']
+
+[[on-window-detected]]
 if.app-id = 'com.TickTick.task.mac'
 if.during-aerospace-startup = true
 run = ['move-node-to-workspace 3']
