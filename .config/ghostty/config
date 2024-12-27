@@ -1,0 +1,9 @@
+font-family = Fira Code
+
+# theme = dark:catppuccin-mocha,light:catppuccin-latte
+theme=catppuccin-mocha
+
+background-opacity = 0.65
+background-blur-radius = 20
+
+# macos-titlebar-style = hidden
