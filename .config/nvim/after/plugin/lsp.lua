@@ -4,7 +4,6 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
     "ruff",
-    "ruff_lsp",
 })
 
 local cmp = require("cmp")
