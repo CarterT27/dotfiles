@@ -99,9 +99,6 @@ eval "$(thefuck --alias)"
 alias please='sudo $(history -p !!)'
 alias be='bundle exec jekyll serve'
 alias jp='jupyter notebook'
-alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox'
-# alias docker='podman'
-alias leet='vim leetcode.nvim'
 alias s='kitten ssh'
 
 # Add flags to existing aliases.
@@ -113,23 +110,4 @@ setopt no_auto_menu  # require an extra TAB press to open the completion menu
 
 # Idk where to put these
 eval "$(zoxide init --cmd cd zsh)"
-eval "$(mise activate zsh)"
-source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-source /opt/homebrew/opt/chruby/share/chruby/auto.sh
-chruby ruby-3.1.3
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
+eval "$(/opt/homebrew/bin/mise activate zsh)"
