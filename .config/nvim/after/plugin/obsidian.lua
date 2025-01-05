@@ -2,7 +2,7 @@ require("obsidian").setup({
     workspaces = {
         {
             name = "garden",
-            path = "~/dev/digital_garden/content",
+            path = "~/Development/digital_garden/content",
         }
     },
     daily_notes = {
