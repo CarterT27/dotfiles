@@ -205,25 +205,11 @@ if.during-aerospace-startup = true
 run = ['move-node-to-workspace 1']
 
 [[on-window-detected]]
-if.app-id = 'com.kovidgoyal.kitty'
-if.during-aerospace-startup = true
-run = ['move-node-to-workspace 2']
-
-[[on-window-detected]]
-if.app-id = 'com.googlecode.iterm2'
-if.during-aerospace-startup = true
-run = ['move-node-to-workspace 2']
-
-[[on-window-detected]]
 if.app-id = 'com.TickTick.task.mac'
 if.during-aerospace-startup = true
-run = ['move-node-to-workspace 3']
+run = ['move-node-to-workspace T']
 
 # Ignore apps
-
-[[on-window-detected]]
-if.app-id = 'com.macpaw.CleanMyMac5'
-run = ['layout floating']
 
 # [[on-window-detected]]
 # if.app-id = 'company.thebrowser.Browser'
