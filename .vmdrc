@@ -1,0 +1,21 @@
+# open VMD Main
+menu main on
+
+# set orthographic projection
+display projection orthographic
+
+# set background white
+color Display Background white
+color Display Foreground black
+color Display FPS black
+color Axes Labels black
+color Name H black
+color Type H black
+color Element H black
+color Resname ARG black
+color Restype Nonpolar black
+color Structure Coil black
+color Label Bonds black
+
+# change directory
+cd ~/Development/BIOS_10603

@@ -97,9 +97,16 @@ alias tree='tree -a -I .git'
 alias vim=nvim
 eval "$(thefuck --alias)"
 alias please='sudo $(history -p !!)'
-alias be='bundle exec jekyll serve'
+alias be='bundle exec jekyll serve --livereload'
 alias jp='jupyter notebook'
-alias s='kitten ssh'
+alias s='kitty +kitten ssh'
+alias rstudio='open -a RStudio'
+alias ocserver='opencode web --hostname 0.0.0.0 --port 4096'
+# https://stackoverflow.com/a/17029936/8985934
+alias git-list-untracked='git fetch --prune && git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}"'
+alias git-remove-untracked-safe='git fetch --prune && git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}" | xargs git branch -d'
+# unsafe because -D doesn't check if the local branches are already merged
+alias git-remove-untracked-unsafe='git fetch --prune && git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}" | xargs git branch -D'
 
 # Add flags to existing aliases.
 alias ls="${aliases[ls]:-ls} -A"
@@ -111,6 +118,7 @@ setopt no_auto_menu  # require an extra TAB press to open the completion menu
 # Idk where to put these
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(/opt/homebrew/bin/mise activate zsh)"
+. "$HOME/.cargo/env"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -133,3 +141,27 @@ fi
 
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+# bun completions
+[ -s "/Users/cartertran/.bun/_bun" ] && source "/Users/cartertran/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/Users/cartertran/.opam/opam-init/init.zsh' ]] || source '/Users/cartertran/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
+
+export CLAUDE_CODE_USE_BEDROCK=0
+export AWS_REGION=us-east-1

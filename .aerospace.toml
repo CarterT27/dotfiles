@@ -76,9 +76,8 @@ outer.right =      5
 # All possible commands: https://nikitabobko.github.io/AeroSpace/commands
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#exec-and-forget
-# You can uncomment the following lines to open up terminal with alt + enter shortcut (like in i3)
-# alt-enter = '''exec-and-forget osascript -e '
-# tell application "Terminal"
+# cmd-enter = '''exec-and-forget osascript -e '
+# tell application "kitty"
 #     do script
 #     activate
 # end tell'
@@ -117,7 +116,7 @@ alt-6 = 'workspace 6'
 alt-7 = 'workspace 7'
 alt-8 = 'workspace 8'
 alt-9 = 'workspace 9'
-alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't need
+alt-a = 'workspace A'
 alt-b = 'workspace B'
 alt-c = 'workspace C'
 alt-d = 'workspace D'
@@ -200,17 +199,45 @@ alt-shift-l = ['join-with right', 'mode main']
 # Setup workspaces on startup
 
 [[on-window-detected]]
-if.app-id = 'company.thebrowser.Browser'
-if.during-aerospace-startup = true
+if.app-name-regex-substring = 'kitty'
 run = ['move-node-to-workspace 1']
 
 [[on-window-detected]]
-if.app-id = 'com.TickTick.task.mac'
-if.during-aerospace-startup = true
+if.app-name-regex-substring = 'TickTick'
 run = ['move-node-to-workspace T']
 
-# Ignore apps
+[[on-window-detected]]
+if.app-name-regex-substring = 'Mail'
+run = ['move-node-to-workspace N']
 
-# [[on-window-detected]]
-# if.app-id = 'company.thebrowser.Browser'
-# run = ['layout floating']
+[[on-window-detected]]
+if.app-name-regex-substring = 'Zen'
+run = ['move-node-to-workspace 2']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Helium'
+run = ['move-node-to-workspace 2']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Messages'
+run = ['move-node-to-workspace M']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Cursor'
+run = ['move-node-to-workspace 3']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Discord|Slack'
+run = ['move-node-to-workspace D']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Spotify'
+run = ['move-node-to-workspace S']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Zotero'
+run = ['move-node-to-workspace Z']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Finder'
+run = ["layout floating"]
