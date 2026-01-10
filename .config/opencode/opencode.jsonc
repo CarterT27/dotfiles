@@ -1,0 +1,65 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "theme": "system",
+    "autoupdate": true,
+    "permission": {
+        "edit": "ask",
+        "bash": {
+            "*": "ask",
+            "pwd": "allow",
+            "git status": "allow",
+            "ls": "allow"
+        },
+        "webfetch": "ask",
+        "doom_loop": "ask",
+        "external_directory": "ask"
+    },
+    "mcp": {
+        "github": {
+            "type": "remote",
+            "url": "https://api.githubcopilot.com/mcp/",
+            "headers": {
+                "Authorization": "Bearer {env:GITHUB_MCP_PAT}"
+            },
+            "enabled": false
+        },
+        "cloudflare-observability": {
+            "type": "local",
+            "command": ["npx", "mcp-remote", "https://observability.mcp.cloudflare.com/mcp"],
+            "enabled": false
+        },
+        "cloudflare-bindings": {
+            "type": "local",
+            "command": ["npx", "mcp-remote", "https://bindings.mcp.cloudflare.com/mcp"],
+            "enabled": false
+        },
+        "convex": {
+            "type": "local",
+            "command": ["npx", "-y", "convex@latest", "mcp", "start"],
+            "enabled": false
+        },
+        "context7": {
+            "type": "remote",
+            "url": "https://mcp.context7.com/mcp",
+            "enabled": true
+        },
+        "gh_grep": {
+            "type": "remote",
+            "url": "https://mcp.grep.app",
+            "enabled": false
+        },
+    },
+    "provider": {
+        "openai": {
+            "options": {
+                "reasoningEffort": "medium",
+                "reasoningSummary": "auto",
+                "textVerbosity": "medium",
+                "include": [
+                    "reasoning.encrypted_content"
+                ],
+                "store": false
+            }
+        }
+    }
+}
