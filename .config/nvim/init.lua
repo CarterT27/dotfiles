@@ -300,6 +300,11 @@ vim.g.opencode_opts = {
     provider = {
         enabled = "tmux",
         cmd = "opencode --port 3210"
+    },
+    events = {
+        permissions = {
+            enabled = false  -- Disable duplicate permission prompts in nvim
+        }
     }
 }
 vim.o.autoread = true
