@@ -128,6 +128,7 @@ vim.pack.add({
     "https://github.com/MunifTanjim/nui.nvim",
     "https://github.com/nvim-tree/nvim-web-devicons",
     "https://github.com/NickvanDyke/opencode.nvim",
+    "https://github.com/xeluxee/competitest.nvim",
     -- Lazy-loaded plugins (opt = true)
     { src = "https://github.com/epwalsh/obsidian.nvim", opt = true },
     { src = "https://github.com/lervag/vimtex", opt = true },
@@ -325,6 +326,22 @@ end, { desc = "OpenCode: Toggle interface" })
 vim.keymap.set({ "n", "x" }, "go", function()
     return require("opencode").operator("@this ")
 end, { expr = true, desc = "OpenCode: Operator mode" })
+
+-- CompetiTest
+require("competitest").setup({
+    template_file = "/Users/cartertran/Development/cf/templates/cp.cpp",
+    evaluate_template_modifiers = true,
+    received_problems_path = "/Users/cartertran/Development/cf/$(JUDGE)/$(CONTEST)/$(PROBLEM).$(FEXT)",
+    received_contests_directory = "/Users/cartertran/Development/cf/$(JUDGE)/$(CONTEST)",
+    received_contests_problems_path = "$(PROBLEM).$(FEXT)",
+})
+
+vim.keymap.set("n", "<leader>cr", "<cmd>CompetiTest run<CR>", { desc = "CompetiTest: Run" })
+vim.keymap.set("n", "<leader>ca", "<cmd>CompetiTest add_testcase<CR>", { desc = "CompetiTest: Add testcase" })
+vim.keymap.set("n", "<leader>ce", "<cmd>CompetiTest edit_testcase<CR>", { desc = "CompetiTest: Edit testcase" })
+vim.keymap.set("n", "<leader>cd", "<cmd>CompetiTest delete_testcase<CR>", { desc = "CompetiTest: Delete testcase" })
+vim.keymap.set("n", "<leader>cp", "<cmd>CompetiTest receive problem<CR>", { desc = "CompetiTest: Receive problem" })
+vim.keymap.set("n", "<leader>cc", "<cmd>CompetiTest receive contest<CR>", { desc = "CompetiTest: Receive contest" })
 
 -- ----------------------------------------------------------------------------
 -- SECTION 6: Autocmds
