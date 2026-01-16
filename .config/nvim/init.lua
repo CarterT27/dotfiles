@@ -132,7 +132,7 @@ vim.pack.add({
     -- Lazy-loaded plugins (opt = true)
     { src = "https://github.com/epwalsh/obsidian.nvim", opt = true },
     { src = "https://github.com/lervag/vimtex", opt = true },
-    { src = "https://github.com/chomosuke/typst-preview.nvim", opt = true },
+    { src = "https://github.com/chomosuke/typst-preview.nvim", opt = true, rev = "master" },
     { src = "https://github.com/morsecodist/magma-nvim", opt = true },
     { src = "https://github.com/ellisonleao/carbon-now.nvim", opt = true },
 })
@@ -411,7 +411,7 @@ vim.api.nvim_create_autocmd("FileType", {
     callback = function()
         vim.cmd.packadd("typst-preview.nvim")
         require('typst-preview').setup({
-            debug = true,
+            -- debug = true,
         })
     end,
     once = true,
