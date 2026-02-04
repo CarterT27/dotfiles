@@ -46,7 +46,7 @@ setopt rcs
 . "$HOME/.cargo/env"
 
 # zerobrew
-export PATH="/Users/cartertran/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # zerobrew
 export PATH="/opt/zerobrew/prefix/bin:$PATH"

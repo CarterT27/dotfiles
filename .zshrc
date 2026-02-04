@@ -1,6 +1,6 @@
 # OPENSPEC:START
 # OpenSpec shell completions configuration
-fpath=("/Users/cartertran/.zsh/completions" $fpath)
+fpath=("$HOME/.zsh/completions" $fpath)
 autoload -Uz compinit
 compinit
 # OPENSPEC:END
@@ -149,15 +149,13 @@ fi
 # <<< conda initialize <<<
 
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 # bun completions
-[ -s "/Users/cartertran/.bun/_bun" ] && source "/Users/cartertran/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -169,7 +167,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 #   - the correct directories to the PATH
 #   - auto-completion for the opam binary
 # This section can be safely removed at any time if needed.
-[[ ! -r '/Users/cartertran/.opam/opam-init/init.zsh' ]] || source '/Users/cartertran/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+[[ ! -r "$HOME/.opam/opam-init/init.zsh" ]] || source "$HOME/.opam/opam-init/init.zsh" > /dev/null 2> /dev/null
 # END opam configuration
 
 export CLAUDE_CODE_USE_BEDROCK=0

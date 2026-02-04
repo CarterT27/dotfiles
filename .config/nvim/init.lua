@@ -182,17 +182,17 @@ vim.keymap.set('n', '<leader>ps', function()
 end)
 vim.keymap.set('n', '<leader>vh', builtin.help_tags, {})
 
--- Harpoon 2 - Temporarily disabled due to JSON encoding bug with function references
-local harpoon = require("harpoon")
-harpoon.setup()
-
-vim.keymap.set("n", "<leader>ha", function() harpoon:list():add() end)
-vim.keymap.set("n", "<leader>hm", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
-
-vim.keymap.set("n", "<leader>1", function() harpoon:list():select(1) end)
-vim.keymap.set("n", "<leader>2", function() harpoon:list():select(2) end)
-vim.keymap.set("n", "<leader>3", function() harpoon:list():select(3) end)
-vim.keymap.set("n", "<leader>4", function() harpoon:list():select(4) end)
+-- Harpoon 2 - Disabled due to JSON encoding bug with function references
+-- local harpoon = require("harpoon")
+-- harpoon.setup()
+--
+-- vim.keymap.set("n", "<leader>ha", function() harpoon:list():add() end)
+-- vim.keymap.set("n", "<leader>hm", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+--
+-- vim.keymap.set("n", "<leader>1", function() harpoon:list():select(1) end)
+-- vim.keymap.set("n", "<leader>2", function() harpoon:list():select(2) end)
+-- vim.keymap.set("n", "<leader>3", function() harpoon:list():select(3) end)
+-- vim.keymap.set("n", "<leader>4", function() harpoon:list():select(4) end)
 
 -- Undotree
 vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
@@ -328,11 +328,12 @@ vim.keymap.set({ "n", "x" }, "go", function()
 end, { expr = true, desc = "OpenCode: Operator mode" })
 
 -- CompetiTest
+local home = vim.fn.expand("~")
 require("competitest").setup({
-    template_file = "/Users/cartertran/Development/cf/templates/cp.cpp",
+    template_file = home .. "/Development/cf/templates/cp.cpp",
     evaluate_template_modifiers = true,
-    received_problems_path = "/Users/cartertran/Development/cf/$(JUDGE)/$(CONTEST)/$(PROBLEM).$(FEXT)",
-    received_contests_directory = "/Users/cartertran/Development/cf/$(JUDGE)/$(CONTEST)",
+    received_problems_path = home .. "/Development/cf/$(JUDGE)/$(CONTEST)/$(PROBLEM).$(FEXT)",
+    received_contests_directory = home .. "/Development/cf/$(JUDGE)/$(CONTEST)",
     received_contests_problems_path = "$(PROBLEM).$(FEXT)",
 })
 
