@@ -15,7 +15,7 @@ color Element H black
 color Resname ARG black
 color Restype Nonpolar black
 color Structure Coil black
-color Label Bonds black
+color Labels Bonds black
 
 # change directory
 cd ~/Development/BIOS_10603
