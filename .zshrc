@@ -109,6 +109,7 @@ alias jp='jupyter notebook'
 alias s='kitty +kitten ssh'
 alias rstudio='open -a RStudio'
 alias ocserver='opencode web --hostname 0.0.0.0 --port 4096'
+alias bedclaude='CLAUDE_CODE_USE_BEDROCK=1 claude'
 alias oc='opencode'
 # https://stackoverflow.com/a/17029936/8985934
 alias git-list-untracked='git fetch --prune && git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}"'
@@ -173,3 +174,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 export CLAUDE_CODE_USE_BEDROCK=0
 export AWS_REGION=us-east-1
+POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
