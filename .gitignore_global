@@ -1,0 +1,8 @@
+.DS_Store
+.cursorrules
+.cursor
+.env
+__pycache__
+.claude
+.codex
+.opencode

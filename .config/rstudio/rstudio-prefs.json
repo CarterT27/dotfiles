@@ -1,0 +1,9 @@
+{
+    "initial_working_directory": "~",
+    "posix_terminal_shell": "bash",
+    "editor_theme": "catppuccin-frappe",
+    "jobs_tab_visibility": "shown",
+    "pdf_previewer": "system",
+    "editor_keybindings": "vim",
+    "show_terminal_tab": false
+}
