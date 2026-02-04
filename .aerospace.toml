@@ -196,6 +196,14 @@ alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
+# Fix Ghostty Tiling
+
+[[on-window-detected]]
+if.app-id="com.mitchellh.ghostty"
+run= [
+  "layout floating",
+]
+
 # Setup workspaces on startup
 
 [[on-window-detected]]
@@ -211,11 +219,7 @@ if.app-name-regex-substring = 'Mail'
 run = ['move-node-to-workspace N']
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'Zen'
-run = ['move-node-to-workspace 2']
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'Helium'
+if.app-name-regex-substring = 'Zen|Helium'
 run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
@@ -223,8 +227,12 @@ if.app-name-regex-substring = 'Messages'
 run = ['move-node-to-workspace M']
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'Cursor'
+if.app-name-regex-substring = 'Cursor|Conductor|RStudio'
 run = ['move-node-to-workspace 3']
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Calendar'
+run = ['move-node-to-workspace C']
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'Discord|Slack'
