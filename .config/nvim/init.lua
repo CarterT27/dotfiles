@@ -117,6 +117,7 @@ vim.pack.add({
     "https://github.com/williamboman/mason-lspconfig.nvim",
     "https://github.com/hrsh7th/nvim-cmp",
     "https://github.com/hrsh7th/cmp-nvim-lsp",
+    "https://github.com/saadparwaiz1/cmp_luasnip",
     "https://github.com/L3MON4D3/LuaSnip",
     "https://github.com/VonHeikemen/lsp-zero.nvim",
     "https://github.com/wakatime/vim-wakatime",
@@ -252,12 +253,53 @@ vim.lsp.config("lua_ls", {
 
 -- nvim-cmp setup
 local cmp = require("cmp")
+local ls = require("luasnip")
+local s = ls.snippet
+local t = ls.text_node
+local i = ls.insert_node
+
+ls.add_snippets("typst", {
+    s("iffproof", {
+        t({ "($arrow.r.double$)", "", "($arrow.r.double$)" }),
+        i(0),
+    }),
+    s("sumk", {
+        t("sum_("),
+        i(1, "k"),
+        t("="),
+        i(2, "1"),
+        t(")^"),
+        i(3, "n"),
+        t(" "),
+        i(0),
+    }),
+    s("lim", {
+        t("lim_("),
+        i(1, "n"),
+        t(" -> "),
+        i(2, "infinity"),
+        t(") "),
+        i(0),
+    }),
+    s("setb", {
+        t("{ "),
+        i(1, "x"),
+        t(" in "),
+        i(2, "A"),
+        t(" | "),
+        i(3, "condition"),
+        t(" }"),
+        i(0),
+    }),
+})
+
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
 cmp.setup({
     sources = {
         {name = 'lazydev', group_index = 0},
         {name = 'nvim_lsp'},
+        {name = 'luasnip'},
     },
     mapping = cmp.mapping.preset.insert({
         ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
