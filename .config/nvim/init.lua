@@ -260,7 +260,7 @@ local i = ls.insert_node
 
 ls.add_snippets("typst", {
     s("iffproof", {
-        t({ "($arrow.r.double$)", "", "($arrow.r.double$)" }),
+        t({ "($arrow.r.double$)", "", "($arrow.l.double$)" }),
         i(0),
     }),
     s("sumk", {
