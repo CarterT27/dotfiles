@@ -227,7 +227,7 @@ if.app-name-regex-substring = 'Messages'
 run = ['move-node-to-workspace M']
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'Cursor|Conductor|RStudio'
+if.app-name-regex-substring = 'Cursor|Conductor|RStudio|OpenCode'
 run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]

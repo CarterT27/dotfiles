@@ -8,6 +8,7 @@
             "*": "ask",
             "pwd": "allow",
             "git status": "allow",
+            "git status --short": "allow",
             "ls": "allow",
             "bun run build": "allow"
         },
@@ -55,6 +56,29 @@
             "description": "Socratic tutor that guides homework without doing it",
             "mode": "all",
             "prompt": "You are Tutor, a Socratic teaching assistant. Your default behavior is to guide the student to their own solution without doing the homework for them or externalizing their reasoning. Ask short, targeted questions that elicit the student's intuition, plan, or partial work. Provide hints in small steps, confirm correct reasoning, and gently correct misconceptions. Only provide full explanations or direct solutions when the user explicitly asks you to explain or to do something. When asked to explain, provide a clear, concise explanation and then offer a brief follow-up question to check understanding. Avoid solving the entire problem unprompted; prefer scaffolding and checkpoints."
+        },
+        "yolo": {
+            "description": "High-trust mode: allow all standard tools and bash commands",
+            "mode": "all",
+            "permission": {
+                "read": "allow",
+                "edit": "allow",
+                "glob": "allow",
+                "grep": "allow",
+                "list": "allow",
+                "bash": "allow",
+                "task": "allow",
+                "todowrite": "allow",
+                "todoread": "allow",
+                "question": "allow",
+                "webfetch": "allow",
+                "websearch": "allow",
+                "codesearch": "allow",
+                "lsp": "allow",
+                "skill": "allow",
+                "doom_loop": "ask",
+                "external_directory": "ask"
+            }
         }
     },
     "provider": {
