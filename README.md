@@ -24,3 +24,32 @@ Then use GNU Stow to create symlinks
 ```Bash
 $ stow .
 ```
+
+# Custom macOS opener app (Kitty + Neovim)
+
+This repo includes a Finder opener app source that launches files in Kitty tabs with Neovim (via Kitty remote control).
+
+Install the app bundle:
+
+```Bash
+$ ./scripts/install-open-in-kitty-nvim-app.sh
+```
+
+This installs `Open in Kitty nvim.app` into `~/Applications`.
+
+Optional flags:
+
+- `--system`: install into `/Applications` (may require sudo permissions)
+- `--set-defaults`: set `.md`, `.txt`, and `.log` defaults using `duti` (`brew install duti`)
+
+Example:
+
+```Bash
+$ ./scripts/install-open-in-kitty-nvim-app.sh --set-defaults
+```
+
+To set all PDFs to open with Skim:
+
+```Bash
+$ ./scripts/set-pdf-default-to-skim.sh
+```
