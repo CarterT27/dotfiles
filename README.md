@@ -14,15 +14,15 @@ Ensure you have the following on your system
 # Installation
 First, clone the repository to your $HOME directory using git
 ```Bash
-$ git clone git@github.com:CarterT27/dotfiles.git
-$ cd dotfiles
+git clone git@github.com:CarterT27/dotfiles.git
+cd dotfiles
 ```
 Then use GNU Stow to create symlinks
 
 **WARNING**: This might not play nicely with existing configurations. I recommend selectively adding configurations as you see fit.
 
 ```Bash
-$ stow .
+stow .
 ```
 
 # Custom macOS opener app (Kitty + Neovim)
@@ -32,7 +32,7 @@ This repo includes a Finder opener app source that launches files in Kitty tabs 
 Install the app bundle:
 
 ```Bash
-$ ./scripts/install-open-in-kitty-nvim-app.sh
+./scripts/install-open-in-kitty-nvim-app.sh
 ```
 
 This installs `Open in Kitty nvim.app` into `~/Applications`.
@@ -45,11 +45,11 @@ Optional flags:
 Example:
 
 ```Bash
-$ ./scripts/install-open-in-kitty-nvim-app.sh --set-defaults
+./scripts/install-open-in-kitty-nvim-app.sh --set-defaults
 ```
 
 To set all PDFs to open with Skim:
 
 ```Bash
-$ ./scripts/set-pdf-default-to-skim.sh
+./scripts/set-pdf-default-to-skim.sh
 ```
