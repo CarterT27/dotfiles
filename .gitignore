@@ -1,4 +1,5 @@
 .config/gh/hosts.yml
+.env
 .config/nvim/lazy-lock.json
 .claude/
 AGENTS.md
