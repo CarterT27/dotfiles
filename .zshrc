@@ -146,7 +146,5 @@ export CLAUDE_CODE_USE_BEDROCK=0
 export AWS_REGION=us-east-1
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 
-export KUBECONFIG="$HOME/.kube/boostrun-yu2dc9.yaml"
-
 # Ensure prompt starts at the top in tmux new panes
 if [[ -n "$TMUX" ]]; then clear; fi
