@@ -339,10 +339,11 @@ require("snacks").setup({
 
 -- Opencode.nvim
 vim.g.opencode_opts = {
-    port = 3210,
-    provider = {
+    -- port = 3210,
+    server = {
         enabled = "tmux",
-        cmd = "opencode --port 3210"
+        -- cmd = "opencode --port 3210 --theme vercel"
+        -- cmd = "opencode --theme vercel"
     },
     events = {
         permissions = {
