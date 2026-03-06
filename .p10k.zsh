@@ -52,7 +52,6 @@
     direnv                  # direnv status (https://direnv.net/)
     asdf                    # asdf version manager (https://github.com/asdf-vm/asdf)
     virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html)
-    anaconda                # conda environment (https://conda.io/)
     pyenv                   # python environment (https://github.com/pyenv/pyenv)
     goenv                   # go environment (https://github.com/syndbg/goenv)
     nodenv                  # node.js version from nodenv (https://github.com/nodenv/nodenv)
@@ -929,39 +928,6 @@
   typeset -g POWERLEVEL9K_VIRTUALENV_{LEFT,RIGHT}_DELIMITER=
   # Custom icon.
   # typeset -g POWERLEVEL9K_VIRTUALENV_VISUAL_IDENTIFIER_EXPANSION='⭐'
-
-  #####################[ anaconda: conda environment (https://conda.io/) ]######################
-  # Anaconda environment color.
-  typeset -g POWERLEVEL9K_ANACONDA_FOREGROUND=37
-
-  # Anaconda segment format. The following parameters are available within the expansion.
-  #
-  # - CONDA_PREFIX                 Absolute path to the active Anaconda/Miniconda environment.
-  # - CONDA_DEFAULT_ENV            Name of the active Anaconda/Miniconda environment.
-  # - CONDA_PROMPT_MODIFIER        Configurable prompt modifier (see below).
-  # - P9K_ANACONDA_PYTHON_VERSION  Current python version (python --version).
-  #
-  # CONDA_PROMPT_MODIFIER can be configured with the following command:
-  #
-  #   conda config --set env_prompt '({default_env}) '
-  #
-  # The last argument is a Python format string that can use the following variables:
-  #
-  # - prefix       The same as CONDA_PREFIX.
-  # - default_env  The same as CONDA_DEFAULT_ENV.
-  # - name         The last segment of CONDA_PREFIX.
-  # - stacked_env  Comma-separated list of names in the environment stack. The first element is
-  #                always the same as default_env.
-  #
-  # Note: '({default_env}) ' is the default value of env_prompt.
-  #
-  # The default value of POWERLEVEL9K_ANACONDA_CONTENT_EXPANSION expands to $CONDA_PROMPT_MODIFIER
-  # without the surrounding parentheses, or to the last path component of CONDA_PREFIX if the former
-  # is empty.
-  typeset -g POWERLEVEL9K_ANACONDA_CONTENT_EXPANSION='${${${${CONDA_PROMPT_MODIFIER#\(}% }%\)}:-${CONDA_PREFIX:t}}'
-
-  # Custom icon.
-  # typeset -g POWERLEVEL9K_ANACONDA_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
   ################[ pyenv: python environment (https://github.com/pyenv/pyenv) ]################
   # Pyenv color.
