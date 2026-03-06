@@ -1,0 +1,8 @@
+nerdfont: true
+merge_strategy: rebase
+agent: opencode
+
+panes:
+  - command: opencode
+    focus: true
+  - split: horizontal
