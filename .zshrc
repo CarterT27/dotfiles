@@ -65,6 +65,11 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home
 
 # Source additional local files if they exist.
 z4h source ~/.env.zsh
+if [[ -f ~/.env ]]; then
+    set -a
+    source ~/.env
+    set +a
+fi
 
 # Use additional Git repositories pulled in with `z4h install`.
 z4h load   ohmyzsh/ohmyzsh/plugins/git
@@ -91,15 +96,15 @@ compdef _directories md
 # Define aliases.
 alias tree='tree -a -I .git'
 alias vim=nvim
-eval "$(thefuck --alias)"
 alias please='sudo $(history -p !!)'
 alias be='bundle exec jekyll serve --livereload'
 alias jp='jupyter notebook'
 alias s='kitty +kitten ssh'
-alias rstudio='open -a RStudio'
+alias rstudio='open -a RStudio .'
 alias ocserver='opencode web --hostname 0.0.0.0 --port 4096'
 alias bedclaude='CLAUDE_CODE_USE_BEDROCK=1 claude'
 alias oc='opencode'
+alias lg='lazygit'
 # https://stackoverflow.com/a/17029936/8985934
 alias git-list-untracked='git fetch --prune && git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}"'
 alias git-remove-untracked-safe='git fetch --prune && git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}" | xargs git branch -d'
@@ -140,3 +145,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export CLAUDE_CODE_USE_BEDROCK=0
 export AWS_REGION=us-east-1
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+
+export KUBECONFIG="$HOME/.kube/boostrun-yu2dc9.yaml"
+
+# Ensure prompt starts at the top in tmux new panes
+if [[ -n "$TMUX" ]]; then clear; fi
