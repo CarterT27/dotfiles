@@ -82,8 +82,8 @@ Example:
 ./scripts/install-open-in-kitty-nvim-app.sh --set-defaults
 ```
 
-To set all PDFs to open with Skim:
+To set all PDFs to open with Sioyek:
 
 ```Bash
-./scripts/set-pdf-default-to-skim.sh
+./scripts/set-pdf-default-to-sioyek.sh
 ```
