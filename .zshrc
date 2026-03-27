@@ -62,6 +62,8 @@ path=(~/bin $path)
 export GPG_TTY=$TTY
 export EDITOR="nvim"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-21.jdk/Contents/Home
+export LIBRARY_PATH="$LIBRARY_PATH:/opt/homebrew/lib"
+export CPATH="$CPATH:/opt/homebrew/include"
 
 # Source additional local files if they exist.
 z4h source ~/.env.zsh
@@ -102,14 +104,17 @@ alias jp='jupyter notebook'
 alias s='kitty +kitten ssh'
 alias rstudio='open -a RStudio .'
 alias ocserver='opencode web --hostname 0.0.0.0 --port 4096'
-alias bedclaude='CLAUDE_CODE_USE_BEDROCK=1 claude'
 alias oc='opencode'
 alias lg='lazygit'
+alias ls='eza'
 # https://stackoverflow.com/a/17029936/8985934
 alias git-list-untracked='git fetch --prune && git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}"'
 alias git-remove-untracked-safe='git fetch --prune && git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}" | xargs git branch -d'
 # unsafe because -D doesn't check if the local branches are already merged
 alias git-remove-untracked-unsafe='git fetch --prune && git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}" | xargs git branch -D'
+# for signed and unsigned commits
+git config --global alias.cu "commit"          # unsigned
+git config --global alias.cs "commit -S"       # signed
 
 # Add flags to existing aliases.
 alias ls="${aliases[ls]:-ls} -A"
@@ -142,8 +147,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 [[ ! -r "$HOME/.opam/opam-init/init.zsh" ]] || source "$HOME/.opam/opam-init/init.zsh" > /dev/null 2> /dev/null
 # END opam configuration
 
-export CLAUDE_CODE_USE_BEDROCK=0
-export AWS_REGION=us-east-1
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 
 # Ensure prompt starts at the top in tmux new panes
