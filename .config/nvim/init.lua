@@ -528,3 +528,34 @@ end, { silent = true })
 vim.keymap.set("n", "<leader>tp", function()
     vim.cmd("TypstPreview")
 end, { silent = true })
+
+-- ----------------------------------------------------------------------------
+-- SECTION 7: CMSC Overrides
+-- Set to false to disable all CMSC-specific behavior.
+-- ----------------------------------------------------------------------------
+local enable_cmsc = true
+
+if enable_cmsc then
+    vim.cmd("filetype on")
+    vim.cmd("syntax on")
+
+    vim.opt.number = true
+    vim.opt.relativenumber = false
+    vim.opt.shiftwidth = 2
+    vim.opt.tabstop = 2
+    vim.opt.expandtab = true
+    vim.opt.wrap = false
+    vim.opt.autoindent = true
+    vim.opt.cindent = true
+    vim.opt.colorcolumn = "80"
+
+    vim.api.nvim_create_autocmd("FileType", {
+        pattern = "make",
+        callback = function()
+            vim.opt_local.tabstop = 8
+            vim.opt_local.shiftwidth = 8
+            vim.opt_local.softtabstop = 0
+            vim.opt_local.expandtab = false
+        end,
+    })
+end
