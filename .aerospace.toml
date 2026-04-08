@@ -231,6 +231,10 @@ if.app-name-regex-substring = 'Cursor|Conductor|RStudio|OpenCode|Codex'
 run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
+if.app-name-regex-substring = 'Linear'
+run = ['move-node-to-workspace 4']
+
+[[on-window-detected]]
 if.app-name-regex-substring = 'Calendar'
 run = ['move-node-to-workspace C']
 
